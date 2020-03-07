@@ -1,0 +1,146 @@
+/* section1开始 */
+.main .inner_section1 .section1_left,
+.main .inner_section1 .section1_center{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/* section1 左边开始 */
+.main .inner_section1 .section1_left{
+    width: 190px;
+    height: 470px;
+}
+.main .inner_section1 .section1_left .left_nav{
+    position: relative;
+}
+.main .inner_section1 .section1_left .left_nav ul.show_menu{
+    width: 100%;
+    padding: 10px 0;
+}
+.main .inner_section1 .section1_left .left_nav ul.show_menu>li{
+    padding-left: 18px;
+    height: 25px;
+    line-height: 25px;
+}
+.main .inner_section1 .section1_left .left_nav ul.show_menu>li:hover{
+    background-color: #ccc;
+}
+/* 隐藏菜单 */
+.main .inner_section1 .section1_left .left_nav .hidden_menu{
+    width: 798px;
+    min-height: 470px;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    position: absolute;
+    top: 0;
+    left: 191px;
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+    z-index: 5;
+    display: none;
+}
+.main .inner_section1 .section1_left .left_nav ul.show_menu li:hover .hidden_menu{
+    display: block;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text{
+    width: 600px;
+    float: left;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_header{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_header a{
+    float: left;
+    width: 74px;
+    height: 24px;
+    background-color: #333;
+    color: #fff;
+    margin-right: 10px;
+    padding-left: 12px;
+    line-height: 24px;
+    transition: all .2s;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_header a:hover{
+    background-color: #c81623;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_header a i{
+    display: inline-block;
+    width: 10px;
+    padding-left: 4px;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_header a i img,
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_main ul li span a i img,
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_main ul li span a i img.hover_img{
+    width: 8px;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_main{
+    font-size: 12px;
+}
+/* 隐藏菜单-外层列表 */
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_main ul.outside_ul{
+    padding-left: 26px;
+    margin-top: 18px;
+}
+.hidden_menu .menu_text .menu_main ul.outside_ul li{
+    margin-bottom: 10px;
+}
+.hidden_menu .menu_text .menu_main ul.outside_ul li span{
+    float: left;
+    font-weight: bold;
+    width: 74px;
+    text-align: right;
+}
+ .hidden_menu .menu_text .menu_main ul.outside_ul li span a i{
+    display: inline-block;
+    width: 8px;
+    padding-left: 2px;
+    position: relative;
+}
+ .hidden_menu .menu_text .menu_main ul.outside_ul li span a i img.hover_img{
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    opacity: 0;
+}
+ .hidden_menu .menu_text .menu_main ul.outside_ul li span a:hover img{
+    opacity: 0;
+}
+ .hidden_menu .menu_text .menu_main ul.outside_ul li span a:hover i img.hover_img{
+    opacity: 1;
+}
+/* 隐藏菜单-内层列表 */
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_text .menu_main ul.outside_ul li ul.inside_ul{
+    float: left;
+    margin-left: 18px;
+    width: 482px;
+}
+.hidden_menu .menu_text .menu_main ul.outside_ul li ul.inside_ul li{
+    float: left;
+    margin: 0 7px;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+}
+.hidden_menu .menu_text .menu_main ul.outside_ul li a{
+    color: #666;
+}
+.hidden_menu .menu_text .menu_main ul.outside_ul li a:hover{
+    color: #c81623;
+}
+
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_img{
+    width: 198px;
+    float: left;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_img .imgs{
+    width: 168px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main .inner_section1 .section1_left .left_nav .hidden_menu .menu_img .imgs img{
+    width: 100%;
+    display: block;
+    margin-bottom: 1px;
+}
+
+/* section1 左边结束 */

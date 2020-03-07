@@ -1,0 +1,114 @@
+/* section1 中间 */
+.main .inner_section1 .section1_center{
+    width: 790px;
+    height: 470px;
+}
+/* section1 中间——轮播图 */
+.main .inner_section1 .section1_center .center_banner{
+    width: 590px;
+    height: 470px;
+    margin-right: 10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+/* 图片轮播 */
+.main .inner_section1 .section1_center .center_banner ul.img_list{
+    width: 2950px;
+}
+.main .inner_section1 .section1_center .center_banner ul.img_list li{
+    width: 590px;
+    height: 0;
+    opacity: 0;
+    float: left;
+    transition: opacity 0.5s;
+}
+.main .inner_section1 .section1_center .center_banner ul.img_list li.active{
+    opacity: 1;
+    height: auto;
+}
+.main .inner_section1 .section1_center .center_banner ul.img_list li a,
+.main .inner_section1 .section1_center .center_banner ul.img_list li img{
+    width: 100%;
+    display: block;
+}
+/* 圆点轮播 */
+.main .inner_section1 .section1_center .center_banner ul.spot_list{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 112px;
+    height: 15px;
+}
+.main .inner_section1 .section1_center .center_banner ul.spot_list li{
+    width: 9px;
+    height: 9px;
+    background-color: rgba(255,255,255,.4);
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.main .inner_section1 .section1_center .center_banner ul.spot_list li:last-child{
+    margin-right: 0;
+}
+.main .inner_section1 .section1_center .center_banner ul.spot_list li.choosed{
+    position: relative;
+    top: -2px;
+    border: 3px solid rgba(0,0,0,.1);
+}
+.main .inner_section1 .section1_center .center_banner ul.spot_list li.choosed::before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+    left: 0;
+}
+
+
+/* section1 center_右侧轮播 */
+.main .inner_section1 .section1_center .center_right{
+    width: 190px;
+    float: right;
+    overflow: hidden;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel{
+    position: relative;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel ul{
+    width: 570px;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel ul li{
+    width: 190px;
+    height: 0;
+    opacity: 0;
+    float: left;
+    transition: opacity .3s;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel ul li.active{
+    height: 470px;
+    opacity: 1;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel ul li img{
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel ul li img:hover{
+    opacity: .75;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel .wheel_left,
+.main .inner_section1 .section1_center .center_right .right_wheel .wheel_right{
+    opacity: 0;
+    transition: opacity .3s;
+}
+.main .inner_section1 .section1_center .center_right .right_wheel:hover .wheel_left,
+.main .inner_section1 .section1_center .center_right .right_wheel:hover .wheel_right{
+    opacity: 1;
+}

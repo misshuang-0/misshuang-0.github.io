@@ -1,0 +1,294 @@
+/* section2开始 */
+.section2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 260px;
+}
+.section2 .innerWidth{
+    height: 100%;
+    /* 禁止被选中 */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.section2 .section2_left,
+.section2 .section2_center,
+.section2 .section2_right{
+    float: left;
+}
+/* section2 左侧开始 */
+.section2 .section2_left{
+    width: 190px;
+    height: 100%;
+    background:url('../../img/section2/seckill.png') center/100% no-repeat;
+}
+.section2 .section2_left h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+.section2 .section2_left .count_down{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 90px;
+}
+.section2 .section2_left .count_down strong{
+    font-size: 18px;
+    font-weight: 700;
+}
+.section2 .section2_left .times{
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.section2 .section2_left .times span{
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #2f3430;
+    position: relative;
+    margin-right: 20px;
+}
+.section2 .section2_left .times span::after{
+    content: ':';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    right: -20px;
+    top: 0;
+}
+.section2 .section2_left .times span:last-child{
+    margin-right: 0;
+}
+.section2 .section2_left .times span:last-child::after{
+    display: none;
+}
+
+/* section2 左侧结束 */
+
+/* section2 中间开始 */
+.section2 .section2_center{
+    width: 800px;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+/* 图片列表 */
+.section2 .section2_center ul.img_list{
+    width: 3200px;
+}
+.section2 .section2_center ul.img_list li{
+    float: left;
+}
+.section2 .section2_center ul.img_list li a.img_item{
+    float: left;
+    width: 200px;
+    height: 260px;
+    position: relative;
+}
+.section2_center ul.img_list li a.img_item .img{
+    width: 140px;
+    height: 140px;
+    margin: 30px 30px 0 30px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.section2_center ul.img_list li a.img_item:hover .img{
+    opacity: .8;
+}
+.section2_center ul.img_list li a.img_item .img img{
+    width: 100%;
+}
+/* 文字描述 价格 */
+.section2_center ul.img_list li a.img_item .des,
+.section2_center ul.img_list li a.img_item .priece{
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+.section2_center ul.img_list li a.img_item .priece{
+    height: 22px;
+    border: 1px solid #E1251B;
+}
+.section2_center ul.img_list li a.img_item .des{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section2_center ul.img_list li a.img_item .priece .left{
+    float: left;
+    width: 92px;
+    height: 100%;
+    background-color: #E1251B;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.section2_center ul.img_list li a.img_item .priece .left i{
+    /* padding-left: 4px; */
+    font-style: normal;
+    font-size: 12px;
+}
+.section2_center ul.img_list li a.img_item .priece .left::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 22px 8px 0 0;
+}
+.section2_center ul.img_list li a.img_item .priece .right{
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+/* 图片分割线 */
+.section2_center ul.img_list li a.img_item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    right: 0;
+    width: 1px;
+    height: 200px;
+    background: linear-gradient(180deg,#fff,#eee,#fff);
+}
+
+/* section2 中间结束 */
+
+/* section2 右侧开始 */
+.section2 .section2_right{
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+}
+.section2 .section2_right .inner_wheel{
+    width: 180px;
+    height: 240px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+/* 图片列表 */
+.section2 .section2_right .inner_wheel .img_list{
+    width: 540px;
+}
+.section2 .section2_right .inner_wheel .img_list li,
+.section2 .section2_right .inner_wheel .img_list li a{
+    width: 180px;
+    height: 240px;
+}
+.section2 .section2_right .inner_wheel .img_list li{
+    float: left;
+}
+.section2 .section2_right .inner_wheel .img_list li a{
+    display: block;
+}
+/* 图片 */
+.section2 .section2_right .inner_wheel .img_list li a .img{
+    width: 120px;
+    height: 120px;
+    margin: 20px 30px 10px;
+    margin-top: 20px;
+    transition: opacity .3s;
+}
+.section2 .section2_right .inner_wheel .img_list li a:hover .img{
+    opacity: .8;
+}
+/* 文字部分 */
+.section2 .section2_right .inner_wheel .img_list li a .text{
+    width: 180px;
+    height: 90px;
+    text-align: center;
+    font-size: 14px;
+    background: linear-gradient(180deg,rgba(255,255,255,.5),rgba(220,224,236,.5));
+}
+.section2 .section2_right .inner_wheel .img_list li a .text p:first-child{
+    color: #666;
+}
+.section2 .section2_right .inner_wheel .img_list li a .text p:nth-child(2){
+    color: #333;
+    font-weight: 700;
+}
+/* 按钮 */
+.section2 .section2_right .inner_wheel .img_list li a .text .btn{
+    width: 82px;
+    height: 24px;
+    color: #e1251b;
+    border: 1px solid #e1251b;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: background-color .3s;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+.section2 .section2_right .inner_wheel .img_list li a .text .btn img{
+    width: 10px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+}
+.section2 .section2_right .inner_wheel .img_list li a .text .btn:hover{
+    background-color: #e1251b;
+    color: #fff;
+}
+.section2 .section2_right .inner_wheel .img_list li a .text .btn .img_hover{
+    opacity: 0;
+}
+.section2 .section2_right .inner_wheel .img_list li a .text .btn:hover .img_hover{
+    opacity: 1;
+}
+
+/* 圆点列表 */
+.section2 .section2_right .inner_wheel .spot_list{
+    width: 12px;
+    height: 4px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -6px;
+}
+.section2 .section2_right .inner_wheel .spot_list li{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #999;
+    float: left;
+    cursor: pointer;
+}
+.section2 .section2_right .inner_wheel .spot_list li.selected{
+    background-color: #e1251b;
+}
+.section2 .section2_right .inner_wheel .spot_list li:first-child{
+    margin-right: 4px;
+}
+/* section2 右侧结束 */
+
+/* section2结束 */

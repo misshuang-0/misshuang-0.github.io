@@ -1,0 +1,36 @@
+/* 底部开始 */
+
+/* 中间——帮助 开始 */
+footer .center_help{
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede;
+}
+footer .center_help ul.outside{
+    height: 160px;
+}
+footer .center_help ul.outside>li{
+    width: 198px;
+    float: left;
+    line-height: 22px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+footer .center_help ul.outside>li h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+footer .center_help ul.outside>li:last-child h5{
+    text-align: center;
+    margin-bottom: 15px;
+}
+footer .center_help ul.outside>li:last-child .cover_text{
+    padding: 0 10px;
+}
+footer .center_help ul.outside>li:last-child .cover_text p:last-child{
+    text-align: right;
+}
+
+/* 中间——帮助 结束 */
+
+/* 底部结束 */

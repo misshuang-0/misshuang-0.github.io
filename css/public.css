@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    color: #2c3e50;
+    background-color: #f4f4f4;
+    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", '宋体', sans-serif;
+    min-width: 990px;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #c81623;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+ul{
+    list-style: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.floatL{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+
+/* 白色背景 */
+.white_bg{
+    background-color: #fff;
+}

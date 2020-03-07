@@ -1,0 +1,106 @@
+/* 顶部导航开始 */
+nav.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* height: 80px; */
+    background-color: rgba(0,0,0,.8) !important;
+    z-index: 5;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+nav .navbar-brand{
+    color: #20BAF2;
+}
+
+/* 导航栏 */
+nav ul{
+    /* height: 80px; */
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 14px;
+    transition: color .2s;
+}
+nav ul li.active a{
+    color: #20BAF2;
+}
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* 顶部导航结束 */
+
+
+/* banner图开始 */
+#banner.my_banner{
+    position: relative;
+    background: url('../../official_img/banner.jpg') center/cover no-repeat;
+    box-sizing: border-box;
+}
+.my_banner .text{
+    color: #fff;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+}
+.my_banner .text h2,
+.my_banner .text .box_top,
+.my_banner .text .box_bottom{
+    width: 96px;
+    margin: 0 auto;
+}
+.my_banner .text h2{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 42px;
+    border-bottom: 2px solid #fff;
+}
+
+.my_banner .text .box_top,
+.my_banner .text .box_bottom{
+    box-sizing: border-box;
+    margin-top: 16px;
+    height: 46px;
+    border: 2px solid #fff;
+}
+.my_banner .text .box_top{
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+.my_banner .text .box_bottom{
+    border-top: 0;
+}
+
+.my_banner .text p{
+    line-height: 30px;
+    transition: transform .5s;
+}
+.my_banner .text p:hover{
+    transform: scale(1.05,1.05);
+}
+.my_banner .text p:first-of-type{
+    font-size: 24px;
+    line-height: 42px;
+}
+.my_banner .text p:last-of-type{
+    font-size: 18px;
+}
+/* 按钮 */
+.my_banner .text button{
+    margin-top: 20px;
+}
+
+
+/* banner图结束 */

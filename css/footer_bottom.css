@@ -1,0 +1,78 @@
+/* 底部开始 */
+
+/* 底部——版权 开始 */
+footer .bottom_copyright{
+    padding: 15px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+footer .bottom_copyright p{
+    text-align: center;
+}
+/* copyright_links */
+footer .bottom_copyright p{
+    text-align: center;
+}
+footer .bottom_copyright .copyright_links span{
+    margin: 2px 0;
+    color: #ccc;
+}
+
+/* copyright_info */
+footer .bottom_copyright .copyright_info{
+    padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+}
+footer .bottom_copyright .copyright_info a{
+    color: #999;
+}
+footer .bottom_copyright .copyright_info a:hover{
+    color: #c81623;
+}
+
+footer .bottom_copyright .copyright_info .info_center img{
+    width: 14px;
+    margin: 0 4px;
+}
+footer .bottom_copyright .copyright_auth{
+    color: #999;
+}
+
+/* copyright_auth */
+footer .bottom_copyright .copyright_auth{
+    margin: 25px 0;
+}
+footer .bottom_copyright .copyright_auth a{
+    display: inline-block;
+    width: 102px;
+    height: 32px;
+    overflow: hidden;
+    line-height: 1000px;
+}
+footer .bottom_copyright .copyright_auth a.icon1{
+    background: url('../../img/shop_footer.png');
+    background-position: right 358px;
+}
+footer .bottom_copyright .copyright_auth a.icon2{
+    background: url('../../img/shop_footer.png');
+    background-position: right 394px;
+}
+footer .bottom_copyright .copyright_auth a.icon3{
+    background: url('../../img/shop_footer.png');
+    background-position: right 432px;
+}
+footer .bottom_copyright .copyright_auth a.icon4{
+    background: url('../../img/shop_footer.png');
+    background-position: right 470px;
+}
+footer .bottom_copyright .copyright_auth a.icon5{
+    background: url('../../img/shop_footer.png');
+    background-position: left 316px;
+}
+
+/* 底部——版权 结束 */
+
+
+/* 底部结束 */

@@ -1,0 +1,125 @@
+.container-fluid{
+    padding: 0;
+}
+body{
+    background-color: #fff;
+}
+.innerContent{
+    width: 70%;
+    margin: 0 auto;
+}
+a:hover{
+    color: #20BAF2;
+}
+
+/* 居中 */
+.centered{
+    margin: 0 auto;
+}
+
+/* title 公共样式 */
+.title{
+    width: 240px;
+    height: 74px;
+    position: relative;
+}
+.title .line_top,
+.title .line_bottom{
+    width: 60px;
+    height: 1px;
+    background-color: #ccc;
+}
+.title .line_bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.title h3{
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 48px;
+    color: #333;
+}
+
+/* 广告 公共样式 */
+.adv{
+    width: 100%;   
+    height: 450px;
+    margin-top: 70px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.adv .line{
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #dddddd;
+    /* margin-top: 200px; */
+    margin-bottom: 4px;
+}
+.adv .public_p{
+    font-size: 30px;
+    color: #fff;
+}
+
+/* more 公共样式*/
+.more{
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #707070;
+    margin-top: 36px;
+    margin-bottom: -30px;
+    text-align: center;
+    transition: all .3s;
+}
+.more button{
+    height: 30px;
+    line-height: 30px;
+    transition: color .3s;
+}
+.more:hover{
+    background-color: #15ade4;
+    border-color: transparent;
+}
+.more:hover button{
+    color: #fff;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+/* 媒体查询 */
+/* 0.pc */
+@media screen and (min-width: 1025px){
+    .news .news_list .news_item h4 img{
+        left: 110px;
+    }
+}
+/* 1.pad pro */
+@media screen and (min-width: 992px) and (max-width: 1024px){
+    .news .news_list .news_item h4 img{
+        left: 90px;
+    }
+}
+/* 2.pad */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .news .news_list .news_item h4 img{
+        left: 110px;
+    }
+    .adv .public_p{
+        font-size: 25px;
+        color: #fff;
+    }
+}
+/* 3.phone */
+@media screen and (max-width: 767px){
+    .news .news_list .news_item h4 img{
+        left: 194px;
+    }
+    .adv .public_p{
+        font-size: 20px;
+        color: #fff;
+    }
+}
