@@ -1,2 +1,2 @@
-# misshuang-0.github.io
-个人网站
+# Gobang_game
+五子棋小游戏
