@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Gobang_game: type--dom
-=======
 # Gobang_game: type--canvas
 >>>>>>> 739d0e9834c04cf68405bfe2d9fc1d7624df5a80
 ##五子棋小游戏
