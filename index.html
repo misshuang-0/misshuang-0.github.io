@@ -17,35 +17,36 @@
 
             <!-- 棋盘网格背景 -->
             <!-- 模拟不兼容效果，将canvas注释了，显示 dom 元素的五子棋游戏 -->
-            <!-- <canvas class="gridCanvas" ref="gridCanvas" width="600" height="600"> -->
-            <!-- 如果当浏览器不支持canvas,则显示内部内容 -->
-            <div class="chessBg">
-                <div ref="domChessBg" class="domChessBg">
+            <canvas class="gridCanvas" ref="gridCanvas" width="600" height="600">
+                <!-- 如果当浏览器不支持canvas,则显示内部内容 -->
+                <div class="chessBg">
+                    <div ref="domChessBg" class="domChessBg">
+                        <table cellspacing="0px">
+                            <tbody>
+                                <tr v-for="(trItem,i) of chessBgTrList" :key="i">
+                                    <td v-for="(tdItem,j) of chessBgTdList" :key="j" class="chessAreaItem chessBgItem"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </canvas>
+
+            <!-- 棋子网格，游戏操作区域 -->
+            <!-- 模拟不兼容效果，将canvas注释了，显示 dom 元素的五子棋游戏 -->
+            <canvas class="chessCanvas" @click="myChess" :class="canPlay" ref="myCanvas" width="600" height="600">
+                <!-- 如果当浏览器不支持canvas,则显示内部内容 -->
+                <div :class="canPlay" class="chessArea" ref="chessArea">
                     <table cellspacing="0px">
                         <tbody>
-                            <tr v-for="(trItem,i) of chessBgTrList" :key="i">
-                                <td v-for="(tdItem,j) of chessBgTdList" :key="j" class="chessAreaItem chessBgItem"></td>
+                            <tr v-for="(trItem,i) of chessTrList" :key="i">
+                                <td v-for="(tdItem,j) of chessTdList" :key="j" @click="myChess(i,j)" :ref="`${i}-${j}`"
+                                    class="chessAreaItem"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <!-- </canvas> -->
-
-            <!-- 棋子网格，游戏操作区域 -->
-            <!-- 模拟不兼容效果，将canvas注释了，显示 dom 元素的五子棋游戏 -->
-            <!-- <canvas class="chessCanvas" @click="myChess" :class="canPlay" ref="myCanvas" width="600" height="600"> -->
-            <div :class="canPlay" class="chessArea" ref="chessArea">
-                <table cellspacing="0px">
-                    <tbody>
-                        <tr v-for="(trItem,i) of chessTrList" :key="i">
-                            <td v-for="(tdItem,j) of chessTdList" :key="j" @click="myChess(i,j)" :ref="`${i}-${j}`"
-                                class="chessAreaItem"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- </canvas> -->
+            </canvas>
 
             <!-- 按钮区 -->
             <div class="btn">
