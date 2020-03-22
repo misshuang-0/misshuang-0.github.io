@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Gobang_game: type--dom
+=======
+# Gobang_game: type--canvas
+>>>>>>> 739d0e9834c04cf68405bfe2d9fc1d7624df5a80
 ##五子棋小游戏
 1.包含功能：人机对战功能，玩家对战功能，悔棋功能，重新开始功能。
 
